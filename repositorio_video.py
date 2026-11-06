@@ -1,15 +1,15 @@
 import tkinter as tk
 from time import strftime
 
-# --- FUNCIONES DE CONTROL se cambio el led a color azul hora 1501---
+# --- FUNCIONES DE CONTROL continuar---
 def encender_led():
-    # Cambia el color del círculo del LED a azul brillante
-    canvas_led.itemconfig(led, fill="#0000FF", outline="#3498DB")
-    label_estado.config(text="Estado: ENCENDIDO", fg="#3498DB")
+    # Cambia el color del círculo del LED a amarillo brillante
+    canvas_led.itemconfig(led, fill="#FFFF00", outline="#FFCC00")
+    label_estado.config(text="Estado: ENCENDIDO", fg="#FFCC00")
 
 def apagar_led():
-    # Cambia el color del círculo del LED a un azul oscuro/apagado
-    canvas_led.itemconfig(led, fill="#000055", outline="#000033")
+    # Cambia el color del círculo del LED a un amarillo oscuro/apagado
+    canvas_led.itemconfig(led, fill="#555500", outline="#333300")
     label_estado.config(text="Estado: APAGADO", fg="#888888")
 
 def actualizar_reloj():
@@ -40,8 +40,8 @@ frame_led.pack(fill="x", padx=20, pady=15)
 # Interfaz visual del LED (Canvas)
 canvas_led = tk.Canvas(frame_led, width=60, height=60, bg="#1E1E1E", highlightthickness=0)
 canvas_led.pack(pady=5)
-# Inicializa el LED apagado (azul oscuro)
-led = canvas_led.create_oval(10, 10, 50, 50, fill="#000055", outline="#000033", width=2)
+# Inicializa el LED apagado (amarillo oscuro)
+led = canvas_led.create_oval(10, 10, 50, 50, fill="#555500", outline="#333300", width=2)
 
 label_estado = tk.Label(frame_led, text="Estado: APAGADO", font=("Arial", 10, "bold"), fg="#888888", bg="#1E1E1E")
 label_estado.pack()
