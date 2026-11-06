@@ -1,7 +1,7 @@
 import tkinter as tk
 from time import strftime
 
-# --- FUNCIONES DE CONTROL continuar---
+# --- FUNCIONES DE CONTROL continuar modificado en la web hora1557---
 def encender_led():
     # Cambia el color del círculo del LED a amarillo brillante
     canvas_led.itemconfig(led, fill="#FFFF00", outline="#FFCC00")
