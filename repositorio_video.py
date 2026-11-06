@@ -19,7 +19,7 @@ def actualizar_reloj():
     # Se ejecuta a sí misma cada 1000 milisegundos (1 segundo)
     display_reloj.after(1000, actualizar_reloj)
 
-# --- VENTANA PRINCIPAL creacion de conflictos---
+# --- VENTANA PRINCIPAL modificado para un conflicto---
 ventana = tk.Tk()
 ventana.title("Panel de Control - LED & Sensores")
 ventana.geometry("450x500")
