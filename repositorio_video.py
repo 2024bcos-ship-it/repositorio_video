@@ -1,7 +1,7 @@
 import tkinter as tk
 from time import strftime
 
-# --- FUNCIONES DE CONTROL se cambio el led a color azul---
+# --- FUNCIONES DE CONTROL se cambio el led a color azul hora 1501---
 def encender_led():
     # Cambia el color del círculo del LED a azul brillante
     canvas_led.itemconfig(led, fill="#0000FF", outline="#3498DB")
